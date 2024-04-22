@@ -21,11 +21,11 @@ Feel free to contribute.
 
 ## Parser
 
-- Grammar Defined
+### Grammar Defined
 
-    - Arithmetic Expression Grammar
+- Arithmetic Expression Grammar
     
-    ArithmeticExpressions -> identifier = ArithExp | ArithExp
-    ArithExp -> (ArithExp) | term - term | term + term | term
-    term -> factor * factor | factor / factor | factor++ | factor-- | factor
-    factor -> identifier | number
+    - ArithmeticExpressions -> identifier = ArithExp | ArithExp
+    - ArithExp -> (ArithExp) | term - term | term + term | term
+    - term -> factor * factor | factor / factor | factor++ | factor-- | factor
+    - factor -> identifier | number
