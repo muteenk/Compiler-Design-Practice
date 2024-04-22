@@ -1,0 +1,31 @@
+------------------------------
+
+Grammar Rules for Reference
+
+------------------------------
+
+
+----------- For Arithmetic Expressions ------------
+
+ArithmeticExpressions -> identifier = ArithExp | ArithExp
+ArithExp -> (ArithExp) | term - term | term + term | term
+term -> factor * factor | factor / factor | factor
+factor -> identifier | number
+
+
+
+------------ For Logical Expressions ---------------
+
+LogicalExpressions -> identifier = LogiExp | LogiExp
+LogiExp -> (LogiExp) | term || term | term
+term -> factor && factor | ! factor | factor
+factor -> identifier relOp identifier | identifier | number | true | false 
+
+
+
+------------- For Conditional Statements --------------
+
+ConditionalExpressions -> conditional (condition) {statements} | conditional {statements}
+conditional -> if | else | elif | while | for
+condition -> LogicalExpressions
+statements -> ArithmeticExpressions | LogicalExpressions | ConditionalStatements
