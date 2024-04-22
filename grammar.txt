@@ -9,7 +9,7 @@ Grammar Rules for Reference
 
 ArithmeticExpressions -> identifier = ArithExp | ArithExp
 ArithExp -> (ArithExp) | term - term | term + term | term
-term -> factor * factor | factor / factor | factor
+term -> factor * factor | factor / factor | | factor++ | factor-- | factor
 factor -> identifier | number
 
 

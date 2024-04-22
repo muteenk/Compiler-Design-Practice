@@ -17,7 +17,7 @@ int main(){
 
 	Lexer lex(s);
 	std::vector<Token> tokens = lex.tokenizer();
-	Parser p(tokens);
+	Parser par(tokens);
 
 	return 0;
 }
